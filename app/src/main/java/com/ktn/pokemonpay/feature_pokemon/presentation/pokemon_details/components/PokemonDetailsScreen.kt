@@ -12,11 +12,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import com.ktn.pokemonpay.R
 import com.ktn.pokemonpay.feature_pokemon.common.Utils
 import com.ktn.pokemonpay.feature_pokemon.presentation.Screen
 import com.ktn.pokemonpay.feature_pokemon.presentation.pokemon_details.PokemonDetailsViewModel
@@ -58,7 +60,7 @@ fun PokemonDetailsScreen(
                                 horizontalArrangement = Arrangement.SpaceBetween
                             ){
                                 Text(
-                                    text = "Price",
+                                    text = stringResource(R.string.price),
                                     style = MaterialTheme.typography.h6,
                                     fontWeight = FontWeight.Bold,
                                     fontStyle = FontStyle.Italic
@@ -79,7 +81,7 @@ fun PokemonDetailsScreen(
                                 horizontalArrangement = Arrangement.Start
                                     ){
                                 Text(
-                                    text = "Abilities",
+                                    text = stringResource(R.string.abilities),
                                     fontWeight = FontWeight.Bold,
                                     fontStyle = FontStyle.Italic,
                                     style = MaterialTheme.typography.h6,
@@ -106,7 +108,7 @@ fun PokemonDetailsScreen(
                                 horizontalArrangement = Arrangement.Start
                             ){
                                 Text(
-                                    text = "Game Indices",
+                                    text = stringResource(R.string.game_indices),
                                     fontWeight = FontWeight.Bold,
                                     fontStyle = FontStyle.Italic,
                                     style = MaterialTheme.typography.h6,
@@ -151,7 +153,7 @@ fun PokemonDetailsScreen(
                         ),
                     ){
                         Text(
-                            text = "Buy Pokemon",
+                            text = stringResource(R.string.buy_pokemon),
                             color = Color.White
                         )
                     }

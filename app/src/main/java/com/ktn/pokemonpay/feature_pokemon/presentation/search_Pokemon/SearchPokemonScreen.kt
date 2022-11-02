@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -37,7 +38,7 @@ fun SearchPokemonScreen(
             )
             Spacer(Modifier.height(20.dp))
             Text(
-                text = "Enter Pokemon name",
+                text = stringResource(R.string.enter_name),
                 color = MaterialTheme.colors.primary,
                 fontWeight = FontWeight.Bold,
                 style = MaterialTheme.typography.h6,
@@ -64,7 +65,7 @@ fun SearchPokemonScreen(
                 },
                 placeholder = {
                     Text(
-                        text = "Like... Ditto",
+                        text = stringResource(R.string.like_ditto),
                     )
                 }
 

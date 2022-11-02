@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PokemonPay</string>
+    <string name="price">Price</string>
+    <string name="abilities">Abilities</string>
+    <string name="game_indices">Game Indices</string>
+    <string name="buy_pokemon">Buy Pokemon</string>
+    <string name="enter_name">Enter Pokemon name</string>
+    <string name="like_ditto">Like... Ditto</string>
 </resources>
