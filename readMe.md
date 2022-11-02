@@ -12,7 +12,7 @@ Is an app used to purchase pokemons online
  View the details of the Pokemon figure and click pay button
 
 ### Step Three
-[<img src='https://github.com/lumu-daniel/PokemonPay/blob/app/src/main/res/drawable/failed_purchase.png' alt='Purchase Result Failed' height='180'>]
+[<img src='https://github.com/lumu-daniel/PokemonPay/blob/master/app/src/main/res/drawable/failed_purchase.png' alt='Purchase Result Failed' height='180'>]
  You then assertain whether the purchase was successful or not.
 
 ### Or
