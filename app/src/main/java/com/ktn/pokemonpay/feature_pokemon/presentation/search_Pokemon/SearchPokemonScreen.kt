@@ -1,5 +1,6 @@
 package com.ktn.pokemonpay.feature_pokemon.presentation.search_Pokemon
 
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
@@ -8,6 +9,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -48,7 +50,11 @@ fun SearchPokemonScreen(
                 trailingIcon = {
                    IconButton(
                      onClick =   {
-                         navController.navigate(Screen.PokemonDetailsScreen.route + "/${pokemonName}")
+                         if(!pokemonName.value.equals("")){
+                             navController.navigate(Screen.PokemonDetailsScreen.route + "/${pokemonName.value}")
+                         }else{
+                             Toast.makeText(LocalContext.current,"Please Enter Valid Pokemon",Toast.LENGTH_SHORT).show()
+                         }
                      }
                    ){
                        Icon(

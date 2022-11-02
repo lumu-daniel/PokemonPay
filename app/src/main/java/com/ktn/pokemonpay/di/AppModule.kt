@@ -1,5 +1,6 @@
 package com.ktn.pokemonpay.feature_pokemon.di
 
+import com.ktn.pokemonpay.feature_pokemon.common.Constants.BASE_URL
 import com.ktn.pokemonpay.feature_pokemon.data.remote.PokemonApi
 import com.ktn.pokemonpay.feature_pokemon.data.repository.PokemonRepositoryImp
 import com.ktn.pokemonpay.feature_pokemon.domain.repository.PokemonRepository
@@ -20,6 +21,7 @@ object AppModule {
     fun providePokemonApi(): PokemonApi{
         return Retrofit
             .Builder()
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(PokemonApi::class.java)

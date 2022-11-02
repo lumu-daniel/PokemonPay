@@ -3,6 +3,7 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.ktn.pokemonpay">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
             android:allowBackup="true"
             android:name=".feature_pokemon.PokemonApplication"
