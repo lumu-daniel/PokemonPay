@@ -4,19 +4,19 @@
 Is an app used to purchase pokemons online
 
 ### Step One
-[<img src='https://github.com/lumu-daniel/PokemonPay/app/src/main/res/drawable/search_page.png' alt='Search for Pokemon' height='180'>]
+[<img src='https://github.com/lumu-daniel/PokemonPay/blob/app/src/main/res/drawable/search_page.png' alt='Search for Pokemon' height='180'>]
  Search for the pokemon you would like to purchase.
 
 ### Step Two
-[<img src='https://github.com/lumu-daniel/PokemonPay/app/src/main/res/drawable/details.png' alt='Pokemon Details' height='180'>]
+[<img src='https://github.com/lumu-daniel/PokemonPay/blob/app/src/main/res/drawable/details.png' alt='Pokemon Details' height='180'>]
  View the details of the Pokemon figure and click pay button
 
 ### Step Three
-[<img src='https://github.com/lumu-daniel/PokemonPay/app/src/main/res/drawable/failed_purchase.png' alt='Purchase Result Failed' height='180'>]
+[<img src='https://github.com/lumu-daniel/PokemonPay/blob/app/src/main/res/drawable/failed_purchase.png' alt='Purchase Result Failed' height='180'>]
  You then assertain whether the purchase was successful or not.
 
 ### Or
-[<img src='https://github.com/lumu-daniel/PokemonPay/app/src/main/res/drawable/success_purchase.png' alt='Purchase Result Failed' height='180'>]
+[<img src='https://github.com/lumu-daniel/PokemonPay/blob/app/src/main/res/drawable/success_purchase.png' alt='Purchase Result Failed' height='180'>]
 
 ## Technologies and Tools
 #### UX Design: &nbsp; [<img src='https://github.com/lumu-daniel/lumu-daniel/blob/main/assets/images/jc_icon.png' alt='JetPack Compose' height='18'>](https://www.figma.com/developers) [JetPack Compose](https://developer.android.com/jetpack) &nbsp; | &nbsp; [<img src='https://github.com/lumu-daniel/lumu-daniel/blob/main/assets/images/adobe-xd.gif' alt='Adobe XD' height='18'>](https://www.adobe.com/products/xd.html) [Adobe XD]
