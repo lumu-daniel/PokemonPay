@@ -7,6 +7,6 @@ import com.ktn.pokemonpay.feature_pokemon.domain.model.Pokemon
 data class PokemonState (
     val isLoading: Boolean = false,
     val pokemon: Pokemon? = null,
-    val user: User? = LocalDataSource.users.get(1),
+    val user: User? = LocalDataSource.users.get(0),
     val error: String = ""
 )
