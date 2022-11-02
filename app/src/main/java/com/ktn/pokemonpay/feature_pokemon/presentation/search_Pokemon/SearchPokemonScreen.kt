@@ -40,6 +40,7 @@ fun SearchPokemonScreen(
                 text = "Enter Pokemon name",
                 color = MaterialTheme.colors.primary,
                 fontWeight = FontWeight.Bold,
+                style = MaterialTheme.typography.h6,
                 modifier = Modifier.align(Alignment.CenterHorizontally)
                 )
             Spacer(Modifier.height(20.dp))
@@ -52,8 +53,6 @@ fun SearchPokemonScreen(
                      onClick =   {
                          if(!pokemonName.value.equals("")){
                              navController.navigate(Screen.PokemonDetailsScreen.route + "/${pokemonName.value}")
-                         }else{
-                             Toast.makeText(LocalContext.current,"Please Enter Valid Pokemon",Toast.LENGTH_SHORT).show()
                          }
                      }
                    ){

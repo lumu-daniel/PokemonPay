@@ -11,6 +11,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.ktn.pokemonpay.feature_pokemon.presentation.pokemon_details.components.PokemonDetailsScreen
+import com.ktn.pokemonpay.feature_pokemon.presentation.purchase_result.components.PurchaseResultScreen
 import com.ktn.pokemonpay.feature_pokemon.presentation.search_Pokemon.SearchPokemonScreen
 import com.ktn.pokemonpay.feature_pokemon.presentation.theme.PokemonPayTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -33,7 +34,12 @@ class MainActivity : ComponentActivity() {
                         composable(
                             route = Screen.PokemonDetailsScreen.route+"/{pokemon_name}"
                         ) {
-                            PokemonDetailsScreen()
+                            PokemonDetailsScreen(navController)
+                        }
+                        composable(
+                            route = Screen.PurchaseResultScreen.route+"/{purchase_result}"
+                        ) {
+                            PurchaseResultScreen()
                         }
                     }
                 }

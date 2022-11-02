@@ -6,4 +6,6 @@ object Constants {
 
     const val PARAM_POKEMON_NAME = "pokemon_name"
 
+    const val PARAM_PURCHASE_RESULT = "purchase_result"
+
 }

@@ -16,16 +16,20 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
 import com.ktn.pokemonpay.feature_pokemon.common.Utils
+import com.ktn.pokemonpay.feature_pokemon.presentation.Screen
 import com.ktn.pokemonpay.feature_pokemon.presentation.pokemon_details.PokemonDetailsViewModel
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 
 @Composable
 fun PokemonDetailsScreen(
+    navController: NavController,
     viewModel: PokemonDetailsViewModel = hiltViewModel()
 ){
     val state = viewModel.state.value
-    val scope = rememberCoroutineScope()
     Box(modifier = Modifier.fillMaxSize()){
         Column(
             modifier = Modifier.fillMaxSize()
@@ -132,6 +136,11 @@ fun PokemonDetailsScreen(
                     Button(
                         onClick = {
                             viewModel.performPayment(pokemon.price)
+                            if(viewModel.state.value.user?.isBlcSufficient == true){
+                                navController.navigate(Screen.PurchaseResultScreen.route + "/Purchased Pokemon")
+                            }else{
+                                navController.navigate(Screen.PurchaseResultScreen.route + "/Cannot Purchase Pokemon")
+                            }
                         },
                         shape = RoundedCornerShape(5.dp),
                         modifier = Modifier.align(Alignment.CenterHorizontally),
